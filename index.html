@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
+  
   <body>
     <header class="main-header">
-      <img class="company-logo" src="" alt="логотип компании Глейси">
-      
       <nav class="navigation">
+        <img class="company-logo" src="" alt="логотип компании Глейси">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
@@ -20,9 +21,10 @@
             <a class="navigation-link" href="about.html">О компании</a>
           </li>
         </ul>
-        
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+      </nav>  
+      <section class="user-navigation">  
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item">
             <a class="navigation-link telephone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
@@ -37,7 +39,7 @@
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
-      </nav>
+      </section>
     </header>
 
     <main class="main-index">
@@ -51,19 +53,19 @@
           <span class="visually-hidden">следующее фото</span>
         </button>
 
-<!--разобраться как переключаются слайды и куда добавлять инфу по остальным карточкам из слайдера-->        <ol class="gallery-item">
-          <li class="card-1">
-            <h2>Нежный пломбир<br>
-          с клубничным джемом</h2>
-            <p>Натуральное мороженое из свежих сливок
+<!--разобраться как переключаются слайды и куда добавлять инфу по остальным карточкам из слайдера-->        
+        <ol class="gallery-list">
+          <li class="gallery-item">
+            <a class="gallery-item-link" href="#">
+              <h2 class="gallery-item-title">Нежный пломбир с клубничным джемом</h2>
+              <p>Натуральное мороженое из свежих сливок
               и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>  
+            </a>  
+            <button class="order-button" type="button">Заказать</button>
           </li>
-        </ol>
-
-        <form class="order-form" action="https://echo.htmlacademy.ru/" method="POST">  
-          <button class="order-button" type="submit">Заказать</button>
-        </form>
         
+        
+        </ol>
         
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
@@ -109,19 +111,15 @@
         <ul class="presents-list">
           <li class="presents-item item-1">
             <h3 class="presents-item-title">Малинка даром!</h3>
-            <p class="present-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <form class="get-present-form" action="https://echo.htmlacademy.ru/" method="POST">  
-              <button class="get-present-button" type="submit">Хочу подарок</button>
-            </form>
+            <p class="present-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>  
             <img class="present-pic" src="" alt="малина в вафельном стаканчике">
+            <button class="get-present-button" type="button">Хочу подарок</button>
           </li>
           <li class="presents-item item-2">
             <h3 class="presents-item-title">Маршмеллоу даром!</h3>
-            <p class="present-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <form class="get-present-form" action="https://echo.htmlacademy.ru/" method="POST">  
-              <button class="get-present-button" type="submit">Хочу подарок</button>
-            </form>
+            <p class="present-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>  
             <img class="present-pic" src="" alt="Маршмеллоу в вафельном стаканчике">
+            <button class="get-present-button" type="submit">Хочу подарок</button>
           </li>
         </ul>
       </section>
@@ -135,12 +133,10 @@
               <h3 class="product-card-title">Малинка</h3>
               <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
               <span class="product-card-price">310 ₽/кг</span>
-            </a>
-            <form class="add-to-cart" action="https://echo.htmlacademy.ru/" method="POST">  
-              <button class="add-to-cart-button" type="submit">
+            </a>  
+            <button class="add-to-cart-button" type="button">
                 <span class="visually hidden">Добавить в корзину</span>
-              </button>
-            </form>
+            </button>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -149,11 +145,9 @@
               <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
               <span class="product-card-price">340 ₽/кг</span>
             </a>
-            <form class="add-to-cart" action="https://echo.htmlacademy.ru/" method="POST">  
-              <button class="add-to-cart-button" type="submit">
-                <span class="visually hidden">Добавить в корзину</span>
-              </button>
-            </form>
+            <button class="add-to-cart-button" type="button">
+              <span class="visually hidden">Добавить в корзину</span>
+            </button>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -162,11 +156,9 @@
               <p class="product-card-description">Крем-брюле с черничным джемом</p>
               <span class="product-card-price">330 ₽/кг</span>
             </a>
-            <form class="add-to-cart" action="https://echo.htmlacademy.ru/" method="POST">  
-              <button class="add-to-cart-button" type="submit">
-                <span class="visually hidden">Добавить в корзину</span>
-              </button>
-            </form>
+            <button class="add-to-cart-button" type="button">
+              <span class="visually hidden">Добавить в корзину</span>
+            </button>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -175,11 +167,9 @@
               <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
               <span class="product-card-price">320 ₽/кг</span>
             </a>
-            <form class="add-to-cart" action="https://echo.htmlacademy.ru/" method="POST">  
-              <button class="add-to-cart-button" type="submit">
-                <span class="visually hidden">Добавить в корзину</span>
-              </button>
-            </form>
+            <button class="add-to-cart-button" type="button">
+              <span class="visually hidden">Добавить в корзину</span>
+            </button>
           </li>
         </ol>
       </section>
@@ -187,19 +177,11 @@
       <section class="advantages">
         <h2 class="advantages-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
         <ul class="advantages-list">
-          <li class="advantages-list-item">
-            <p class="advantage-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-          </li>
-          <li class="advantages-list-item">
-            <p class="advantage-2">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-          </li>
-          <li class="advantages-list-item">
-            <p class="advantage-3">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
-              и добавки произведены из натурального сырья.</p>
-          </li>
-          <li class="advantages-list-item">
-            <p class="advantage-4">Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому растаять и позволяет сохранить превосходный вкус.</p>
-          </li>
+          <li class="advantages-list-item advantage-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="advantages-list-item advantage-2">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="advantages-list-item advantage-3">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
+              и добавки произведены из натурального сырья.</li>
+          <li class="advantages-list-item advantage-4">Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому растаять и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
 
@@ -218,10 +200,10 @@
           в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="POST">
           <p class="newsletter-email">
-            <label class="visually-hidden" for="newletter-email">Email</label>
-            <input class="field" placeholder="email@example.com" type="email" id="newletter-email" name="newsletter-email">
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field" placeholder="email@example.com" type="email" id="newsletter-email" name="newsletter-email">
           </p>
-          <button class="newletter-button button" type="submit">Отправить</button>
+          <button class="newsletter-button button" type="submit">Отправить</button>
         </form>  
       </section>
 
@@ -245,12 +227,10 @@
             <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
           </p>
           <p class="delivery-form-address">
-            <span class="form-label form-label-icon">
               <label for="delivery-address">Адрес</label>
               <button class="info" type="button">
                 <span class="visually-hidden">посмотреть дополнительную информацию</span>
-              </button>
-            </span>  
+              </button>  
             <input type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
           <button class="button" type="submit">Отправить</button>
