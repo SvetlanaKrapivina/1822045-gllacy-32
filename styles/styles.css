@@ -147,12 +147,17 @@ border: none;
 
 .item-2 {
     background-image: url("../images/presents/item_2.png");
+    
 }
 
 .present-item-title {
     font-weight: 700;
     size: 24px;
     line-height: 30px;
+}
+
+.product-card-img {
+    clip-path: circle(84px at 50% 50%);
 }
 
 .product-card-link {
@@ -223,19 +228,20 @@ border: none;
 }
 
 /* Подписка */
-.newsletter {
+ .newsletter-container {
     background-image: url("../images/mail_bg.jpg");
     background-repeat: no-repeat;
     width: 570px;
     height: 220px;
     border-radius: 16px;
-}
+} 
 
-.newsletter-container {
+.newsletter-container2 {
     background-color: #FCFCFC;
     border-radius: 16px;
     width: 558px;
     height: 208px;
+    
 }
 
 /* Доставка */
