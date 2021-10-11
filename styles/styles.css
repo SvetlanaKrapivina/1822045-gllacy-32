@@ -116,6 +116,7 @@ width: 12px;
 height: 12px;
 background: #FCFCFC;
 border-radius: 50%;
+border: none;
 }
 
 .slider-pagination-button-next {
@@ -141,11 +142,11 @@ border-radius: 50%;
 }
 
 .item-1 {
-    background-image: url(../images/presents/item_1.png);   
+    background-image: url("../images/presents/item_1.png");   
 }
 
 .item-2 {
-    background-image: url(../images/presents/item_2.png);
+    background-image: url("../images/presents/item_2.png");
 }
 
 .present-item-title {
@@ -169,7 +170,7 @@ border-radius: 50%;
 /* Преимущества */
 
 .advantages-container1 {
-    background-image: url(../images/waffle_bg.jpg);
+    background-image: url("../images/waffle_bg.jpg");
     width: 1170px;
     height: 480px;
     border-radius: 16px;
@@ -183,25 +184,25 @@ border-radius: 50%;
     border-radius: 16px;
 }
 .advantage-1 {
-    list-style-image: url(../images/icons/icecream_icon.svg);
+    list-style-image: url("../images/icons/icecream_icon.svg");
 }
 
 .advantage-2 {
-    list-style-image: url(../images/icons/cow_icon.svg);
+    list-style-image: url("../images/icons/cow_icon.svg");
 }
 
 .advantage-3 {
-    list-style-image: url(../images/icons/leaf_icon.svg);
+    list-style-image: url("../images/icons/leaf_icon.svg");
 }
 
 .advantage-4 {
-    list-style-image: url(../images/icons/thermometer_icon.svg);
+    list-style-image: url("../images/icons/thermometer_icon.svg");
 }
 
 
 /* Новости */
 .blog-news {
-    background-image: url(../images/news_bg.jpg);
+    background-image: url("../images/news_bg.jpg");
     background-repeat: no-repeat;
     width: 570px;
     height: 216px;
@@ -223,7 +224,7 @@ border-radius: 50%;
 
 /* Подписка */
 .newsletter {
-    background-image: url(../images/mail_bg.svg);
+    background-image: url("../images/mail_bg.jpg");
     background-repeat: no-repeat;
     width: 570px;
     height: 220px;
@@ -239,7 +240,7 @@ border-radius: 50%;
 
 /* Доставка */
 .delivery {
-    background-image: url(../images/delivery_bg.jpg);
+    background-image: url("../images/delivery_bg.jpg");
     background-repeat: no-repeat;
     width: 1170px;
     height: 534px;
@@ -256,7 +257,7 @@ border-radius: 50%;
 
 /* Контакты */
 .contacts {
-    background-image: url(../images/contacts_bg.jpg);
+    background-image: url("../images/contacts_bg.jpg");
     background-repeat: no-repeat;
     width: 1170px;
     height: 492px;
