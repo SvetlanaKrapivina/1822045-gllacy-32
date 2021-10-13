@@ -157,7 +157,7 @@ border: none;
 }
 
 .product-card-img {
-    clip-path: circle(84px at 50% 50%);
+    border-radius: 50%;
 }
 
 .product-card-link {
@@ -179,6 +179,7 @@ border: none;
     width: 1170px;
     height: 480px;
     border-radius: 16px;
+    border: 1px solid #FEAFC3
     
 }
 
@@ -187,6 +188,8 @@ border: none;
     height: 432px;
     background-color: #FCFCFC;
     border-radius: 16px;
+    margin-top: 24px;
+    margin-left: 24px;
 }
 .advantage-1 {
     list-style-image: url("../images/icons/icecream_icon.svg");
@@ -228,12 +231,14 @@ border: none;
 }
 
 /* Подписка */
- .newsletter-container {
+ .newsletter-container1 {
     background-image: url("../images/mail_bg.jpg");
     background-repeat: no-repeat;
     width: 570px;
     height: 220px;
     border-radius: 16px;
+    border: 1px solid #FEAFC3;
+    
 } 
 
 .newsletter-container2 {
@@ -241,6 +246,10 @@ border: none;
     border-radius: 16px;
     width: 558px;
     height: 208px;
+    margin-top: 6px;
+    margin-left: 6px;
+    
+
     
 }
 
@@ -268,6 +277,8 @@ border: none;
     width: 1170px;
     height: 492px;
     border-radius: 16px;
+    padding-left: 10px;
+    
 }
 
 .contacts-container {
@@ -275,6 +286,7 @@ border: none;
     width: 343px;
     height: 364px;
     border-radius: 8px;
+    
 }
 
 .contacts-address {
