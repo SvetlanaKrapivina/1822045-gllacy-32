@@ -346,3 +346,23 @@ h2 .for_vendors_title {
     size: 14px;
     line-height: 20px;
 }
+
+/* Пагинация */
+.multipage-pagination-list {
+    list-style: none;
+    
+}
+
+.pagination-link {
+    color: #2D3440;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.pagination-current {
+    background-color: #FCFCFC;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 50%;
+}
