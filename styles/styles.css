@@ -50,6 +50,11 @@ body {
     overflow: hidden;
   }
 
+  .company-logo {
+    width: 137px;
+    margin-right: 16px;
+    margin-top: 24px;
+}
 /* Навигация */
 .navigation {
     display: flex;
@@ -60,17 +65,19 @@ body {
 .navigation-list {
     margin: 0;
     padding: 0;
+    margin-top: 34px;
     width: 553px;
     list-style: none;
+    
 }
 
 .user-navigation-list {
-    max-width: 550px;
+    width: 550px;
     margin-left: auto;
 }
 
 .navigation-link {
-    height: 20px;
+    line-height: 20px;
     color: #2D3440;
     text-align: center;
     text-decoration: none;
@@ -139,7 +146,6 @@ body {
 
 .gallery-list {
     width: 470px;
-    height: 280px;
 }
 
 .gallery-item-link {
@@ -150,7 +156,6 @@ body {
     font-weight: 900;
     size: 36px;
     line-height: 46px;
-    height: 92px;
     margin-top: 136px;
     margin-bottom: 24px;
     margin-right: 70px;
@@ -253,6 +258,13 @@ border: none;
     margin-bottom: 80px;
 }
 
+.product-card {
+    background-color: #FCFCFC;
+    width: 270px;
+    height: 281px;
+    border-radius: 8px;
+}
+
 .product-card-img {
     border-radius: 50%;
 }
@@ -337,7 +349,6 @@ border: none;
     background-image: url("../images/news_bg.jpg");
     background-repeat: no-repeat;
     width: 570px;
-    height: 216px;
     border-radius: 16px;
 }
 
@@ -370,7 +381,6 @@ border: none;
     background-image: url("../images/mail_bg.jpg");
     background-repeat: no-repeat;
     width: 570px;
-    height: 220px;
     border-radius: 16px;
     border: 1px solid #FEAFC3;
     
@@ -491,7 +501,7 @@ border: none;
 
 /* Футер */
 
-.main-footer {
+.footer {
     width: 1170px;
     height: 153px;
     margin: 0 auto;
@@ -531,6 +541,7 @@ h2 .for_vendors_title {
 
 .breadcrumbs-list {
     list-style: none;
+    display: flex;
 }
 
 .inner-header-title {
@@ -541,15 +552,66 @@ h2 .for_vendors_title {
 
 /* Сортировка и фильтры */
 
-.filter-container1 {
+.filter-container {
     size: 14px;
     line-height: 20px;
 }
 
+.catalog-filter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 807px;
+    margin-bottom: 48px;
+}
+
+.sorting-type-container,
+.sorting-price-container {
+    width: 196px;
+    margin-right: 24px;
+}
+
+.sorting-fatness-container {
+    width: 367px;
+}
+
+.sorting-topings-container {
+    width: 596px;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.product-card {
+    width: 270px;
+    height: 332px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+li.product-card:nth-child(4),
+li.product-card:nth-child(8),
+li.product-card:nth-child(12) {
+    margin-right: 0;
+}
+
+
 /* Пагинация */
-.multipage-pagination-list {
+.multipage-pagination {
+    width: 1170px;
     list-style: none;
+    display: flex;
+    align-items: baseline;
+    margin-top: 17px;
     
+}
+
+.multipage-pagination-list {
+    display: flex;
+    margin-left: auto;
 }
 
 .pagination-link {
@@ -564,4 +626,9 @@ h2 .for_vendors_title {
     height: 24px;
     text-align: center;
     border-radius: 50%;
+}
+
+button.pagination-show-more {
+    margin-left: 494px;
+
 }
