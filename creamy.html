@@ -74,7 +74,8 @@
                           <option value="popular">по популярности</option>
                           <option value="price">по цене</option>
                       </select>
-                      <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+                      <button class="sorting-control" type="submit">
+                        <span class="visually-hidden">Отсортировать продукты</span></button>
                     </div>
           
                     <div class="sorting-price-container">
@@ -181,13 +182,15 @@
               <ol class="products-list">
                 <li class="product-card">
                   <img class="product-card-img" src="images/catalog/icecream_1.jpg" alt="шарик малинового мороженого" width="168" height="168">
-                  <a class="product-card-link" href="#">
-                    <h3 class="product-card-title">Малинка</h3>
-                    <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
-                    <span class="product-card-price">310 ₽/кг</span>
-                  </a>
+                  <div class="product-card-text-container">
+                    <a class="product-card-link" href="#">
+                      <h3 class="product-card-title">Малинка</h3>
+                      <p class="product-card-description">Сливочное мороженое с малиновым джемом</p>
+                    </a>
+                  </div>
+                  <span class="product-card-price">310 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                      <span class="visually hidden">Добавить в корзину</span>
+                      <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -195,10 +198,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Фисташка</h3>
                     <p class="product-card-description">Фисташковый пломбир с кусочками шоколада</p>
-                    <span class="product-card-price">340 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">340 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -206,10 +209,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Черника</h3>
                     <p class="product-card-description">Крем-брюле с черничным джемом</p>
-                    <span class="product-card-price">330 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">330 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -217,10 +220,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Бабл-гам</h3>
                     <p class="product-card-description">Ванильный пломбир со сладкой посыпкой</p>
-                    <span class="product-card-price">320 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">320 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
           
@@ -229,10 +232,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Ежевика</h3>
                     <p class="product-card-description">Сливочное мороженое с ежевичным джемом</p>
-                    <span class="product-card-price">330 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">330 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -240,10 +243,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Банан</h3>
                     <p class="product-card-description">Сливочный пломбир с банановым вкусом</p>
-                    <span class="product-card-price">340 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">340 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -251,10 +254,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Шоколадка </h3>
                     <p class="product-card-description">Классический шоколадный пломбир </p>
-                    <span class="product-card-price">270 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">270 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -262,10 +265,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Клубничка</h3>
                     <p class="product-card-description">Сливочный пломбир с клубничным вкусом</p>
-                    <span class="product-card-price">300 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">300 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -273,10 +276,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Лимон</h3>
                     <p class="product-card-description">Освежающий лимонный сорбет</p>
-                    <span class="product-card-price">310 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">310 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -284,10 +287,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Ментол</h3>
                     <p class="product-card-description">Сливочный пломбир с ментоловым сиропом</p>
-                    <span class="product-card-price">320 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">320 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -295,10 +298,10 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Орешек</h3>
                     <p class="product-card-description">Фисташковый пломбир с шоколадным сиропом</p>
-                    <span class="product-card-price">360 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">360 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
                 <li class="product-card">
@@ -306,17 +309,17 @@
                   <a class="product-card-link" href="#">
                     <h3 class="product-card-title">Крем-брюле</h3>
                     <p class="product-card-description">Классическое крем-брюле</p>
-                    <span class="product-card-price">280 ₽/кг</span>
                   </a>
+                  <span class="product-card-price">280 ₽/кг</span>
                   <button class="add-to-cart-button" type="button">
-                    <span class="visually hidden">Добавить в корзину</span>
+                    <span class="visually-hidden">Добавить в корзину</span>
                   </button>
                 </li>
               </ol>
             </section>
             <div class="multipage-pagination">
               <button class="button pagination-show-more" type="button">Показать ещё</button>
-              <ul class="multipage-pagination-list">
+              <ol class="multipage-pagination-list">
                 <li class="multipage-pagination-item">
                   <a class="pagination-link pagination-prev pagination-disabled">
                     <span class="visually-hidden">Предыдущая страница</span>
@@ -342,7 +345,7 @@
                     <span class="visually-hidden">Следующая страница</span>
                   </a>
                 </li>
-              </ul>
+              </ol>
             </div>
             <div class="decoration-line"></div>
         </div>
