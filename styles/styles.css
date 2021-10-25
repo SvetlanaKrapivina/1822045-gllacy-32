@@ -33,7 +33,7 @@ body {
     min-height: 100%;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    size: 16px;
+    font-size: 16px;
     line-height: 22px;
     color: #2D3440;
     background-color: #FEAFC3;
@@ -50,11 +50,21 @@ body {
     overflow: hidden;
   }
 
-  .company-logo {
+.company-logo {
     width: 137px;
     margin-right: 16px;
     margin-top: 24px;
 }
+
+/* Заголовки */
+.title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+} 
+
+
 /* Навигация */
 .navigation {
     display: flex;
@@ -65,19 +75,17 @@ body {
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: left;
     margin: 0;
-    padding: 0;
-    margin-top: 34px;
+    padding: 42px;
     width: 553px;
     list-style: none;
     
 }
 
-.user-navigation-list {
-    width: 550px;
+.navigation-list.user-navigation-list {
+    width: 500px;
     margin-left: auto;
-    
-    
 }
 
 .navigation-link {
@@ -95,12 +103,12 @@ body {
 }
 
 .navigation-item .sign-in {
-    size: 14px;
+    font-size: 14px;
 }
+
 .navigation-link.telephone {
     font-weight: 700;
 }
-
 
 
 .page-container {
@@ -115,7 +123,7 @@ body {
 
 /* Кнопки */
 .button {
-    size: 16px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 20px;
     text-align: center;
@@ -141,7 +149,7 @@ body {
 
 .callback-button {
     text-decoration: none;
-    size: 16px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 20px;
 
@@ -152,29 +160,82 @@ body {
 /* Слайдер */
 
 .catalog-gallery {
- display: flex;
+    display: flex;
+    align-content: center;
 }
 
 .gallery-list {
-    width: 470px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-.gallery-item-link {
+.gallery-card {
+    margin-left: 70px;
+
+}
+
+.gallery-card-link {
     text-decoration: none;
     color:#2D3440
 }
+
 .gallery-title {
+    width: 470px;
     font-weight: 900;
-    size: 36px;
+    font-size: 36px;
     line-height: 46px;
     margin-top: 136px;
     margin-bottom: 24px;
-    margin-right: 70px;
 }
 
-.item-description {
-    size: 18px;
+.card-description {
+    font-size: 18px;
     line-height: 24px;
+    width: 414px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    padding-right: 40px;
+}
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-right: 51px;
+
+}
+
+.slider-image {
+    align-self: center;
+}
+    
+.next-image {
+    margin-right: 31px;
+}
+
+/* Пагинация и соцсети */
+
+.pagination-social-links-container {
+    display: flex;
+    width: 1170;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.slider-pagination-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-pagination-item {
+    margin-right: 8px;
+}
+
+.slider-pagination-list:last-child {
+    margin: 0;
 }
 
 .slider-pagination-button,
@@ -188,13 +249,6 @@ border: none;
 
 .slider-pagination-button-next {
     opacity: 0.3;
-}
-
-.title {
-    font-weight: 900;
-    size: 32px;
-    line-height: 46px;
-    text-align: center;
 }
 
 /* Социальные сети */
@@ -251,14 +305,13 @@ border: none;
 }
 
 .presents-title {
-    width: 443px;
     margin: 0 auto;
     margin-bottom: 56px;
 }
 
 .present-item-title {
     font-weight: 700;
-    size: 24px;
+    font-size: 24px;
     line-height: 30px;
     margin-top: 40px;
     margin-left: 40px;
@@ -283,46 +336,44 @@ button.order-present {
 
 
 /* Самые популярные продукты */
+.most-popular-products {
+    margin-bottom: 80px;
+}
 .most-popular-products-title {
     margin: 0 auto;
     margin-bottom: 56px;
-    width: 527px;
+    
 }
 
-.most-popular-products-list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
-}
 
 .product-card {
+    display: flex;
+    flex-direction: column;
     background-color: #FCFCFC;
     border-radius: 8px;
-    width: 270px;
-    height: 332px;
-    margin-right: 30px;
-    margin-bottom: 40px;
     text-align: center;
 }
 
-li.product-card:nth-child(4n) {
-    margin-right: 0;
-}
 
 .product-card-img {
     border-radius: 50%;
+    order: -1;
+    align-self: center;
+    margin-bottom: 16px;
+    max-width: 100%;
+    height: auto;
 }
 
 .products-list, 
 .most-popular-products-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .product-card-link {
     font-weight: 700;
-    size: 20px;
+    font-size: 20px;
     line-height: 24px;
     color: #2D3440;
     text-decoration: none;
@@ -330,38 +381,34 @@ li.product-card:nth-child(4n) {
 
 .product-card-title {
     margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
 }
 
 .product-card-description {
     color: #565C66 ;
     margin: 0;
     padding: 0;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .products-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    column-gap: 30px;
+    row-gap: 40px;
     margin: 0;
     padding: 0;
 }
 
-
-.product-card-text-container {
-    width: 190px;
-    height: 76px;
-    margin: 0 auto;
-    margin-top: 16px;
-    margin-bottom: 20px;
-}
-
-span.product-card-price {
-    font-weight: 700;
-    size: 20px;
-    line-height: 24px;
-    min-width: 85px;
+.product-card-price {
+    align-self: flex-start;
     margin-left: 40px;
-    margin-right: 73px;
-    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .add-to-cart-button {
@@ -405,12 +452,11 @@ span.product-card-price {
 }
 
 .advantages-title {
-    width: 995px;
-    margin: 0 auto;
-    margin-bottom: 56px;
-    padding-left: 63px;
+    margin: 0;
     padding-top: 56px;
-
+    padding-left: 63px;
+    text-align: left;
+    
 }
 
 .advantages-list {
@@ -452,7 +498,7 @@ span.product-card-price {
 
 .blog-news-link h3 {
     font-weight: 700;
-    size: 24px;
+    font-size: 24px;
     line-height: 30px;
     color: #2D3440;
     padding-left: 32px;
@@ -489,12 +535,27 @@ span.product-card-price {
     padding-left: 26px;
     padding-right: 26px;
     padding-top: 26px;
+    margin-bottom: 42px;
 }
 
 .newsletter-email {
     display: inline;
     width: 332px;
     height: 48px;
+}
+
+.newsletter-form {
+    padding-left: 26px;
+    box-sizing: border-box;
+    margin-right: 24px;
+}
+
+#newsletter-email{
+    padding-left: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 160px;
+    margin-right: 24px;
 }
 
 /* Доставка */
@@ -520,10 +581,10 @@ span.product-card-price {
 
 
 .delivery-title {
-    width: 356px;
-    height: 92px;
-    margin-top: 177px;
-    margin-left: 100px;
+    margin: 0;
+    padding: 0;
+    padding-top: 167px;
+    padding-left: 100px;
     text-align: left;
 }
 
@@ -548,15 +609,21 @@ span.product-card-price {
     width: 1170px;
     height: 492px;
     border-radius: 16px;
+    border: 1px solid #FEAFC3;
     
 }
 
-.contacts-container2 {
+.contacts-container {
     background-color: #FCFCFC;
     width: 343px;
     height: 364px;
     border-radius: 8px;
+    margin: 64px;
     
+}
+
+.contacts-card {
+    padding: 40px;
 }
 
 .contacts-address {
@@ -566,7 +633,7 @@ span.product-card-price {
 .contacts-address-text,
 .contacts-phone {
     font-weight: 700;
-    size: 20px;
+    font-size: 20px;
     line-height: 24px;
 }
 
@@ -574,18 +641,8 @@ span.product-card-price {
     margin: 0;
 }
 
-.contacts-subtitle-address {
-    padding-top: 40px;
-    padding-left: 40px;
-}
 
-.contacts-address p,
-.contacts-address a,
-.contacts-phone,
-.contacts-phone-schedule,
-.callback-button {
-    padding-left: 40px;
-}
+
 
 /* Футер */
 
@@ -599,14 +656,14 @@ span.product-card-price {
 }
 
 .for-vendors-container {
-    size: 14px;
+    font-size: 14px;
     line-height: 20px;
 
 }
 
 h2 .for_vendors_title {
     font-weight: 700;
-    size: 14px;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -624,14 +681,14 @@ h2 .for_vendors_title {
     display: flex;
     margin: 0;
     padding: 0;
-    size: 14px;
+    font-size: 14px;
     line-height: 20px;
     list-style-type: none;
 }
 
 .breadcrumbs-link {
     font-weight: 700;
-    size: 14px;
+    font-size: 14px;
     line-height: 20px;
     color: #2D3440;
     margin-right: 28px;
@@ -640,7 +697,7 @@ h2 .for_vendors_title {
 
 .inner-header-title {
     font-weight: 900;
-    size: 32px;
+    font-size: 32px;
     line-height: 46px;
 }
 
@@ -648,7 +705,7 @@ h2 .for_vendors_title {
 
 .filter-container {
 
-    size: 14px;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -687,6 +744,7 @@ h2 .for_vendors_title {
 
 .multipage-pagination-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -713,5 +771,5 @@ h2 .for_vendors_title {
 button.pagination-show-more {
     margin-left: 494px;
     padding: 12px 32px;
-    align-items: center;
+    
 }
